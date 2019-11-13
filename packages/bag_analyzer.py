@@ -6,6 +6,8 @@ import statistics
 from pprint import pprint
 
 bag = rosbag.Bag('/data/example_rosbag_H3.bag')
+# bag = rosbag.Bag('/data/2019-10-09-12-09-35.bag')
+
 
 topics = bag.get_type_and_topic_info()[1].keys()
 for topic in topics:
